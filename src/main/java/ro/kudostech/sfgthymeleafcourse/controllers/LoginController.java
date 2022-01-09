@@ -27,6 +27,11 @@ public class LoginController {
             return "loginform";
         }
 
-        return "redirect:/";
+        return "redirect:/index";
+    }
+
+    @RequestMapping("/logout-success")
+    public String doLogOut() {
+        return "logout-success";
     }
 }
